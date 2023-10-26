@@ -3,10 +3,10 @@ import { CartWidget } from "./CartWidget"
 export const NavBar = () => {
     return (
         <header>
+            <div>
+                <h1>Ciber Arcadia</h1>
+            </div>
             <nav>
-                <div>
-                    <h1>Ciber Arcadia</h1>
-                </div>
                 <ul>
                     <li><a href="">Tienda</a></li>
                     <li><a href="">Juegos</a></li>

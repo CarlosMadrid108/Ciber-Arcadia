@@ -14,3 +14,39 @@ ol {
   text-decoration: none;
   list-style: none;
 }
+
+header {
+  color: white;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(33, 33, 148);
+  padding-left: 50px;
+  padding-right: 50px;
+  font-family: Quicksand ;
+  margin-bottom: 10px;
+}
+
+header img {
+  height: 30px;
+}
+
+header ul {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.cart_widget {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.item-list_container {
+  margin-left: 50px;
+  font-family: Quicksand ;
+  font-size: 1.5rem;
+}
