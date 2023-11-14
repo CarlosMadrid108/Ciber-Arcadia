@@ -13,7 +13,7 @@ export const products = [
         description: "Secuela de Horizon Zero Dawn",
         price: 269,
         category: "juegos",
-        pictureUrl: "https://pesonyb2c.vtexassets.com/arquivos/ids/219119-1600-auto?v=637859880702170000&width=1600&height=auto&aspect=true"
+        pictureUrl: "https://pesonyb2c.vtexassets.com/arquivos/ids/219127-1600-auto?v=637859885220370000&width=1600&height=auto&aspect=true"
     },
     {
         id: 3,
