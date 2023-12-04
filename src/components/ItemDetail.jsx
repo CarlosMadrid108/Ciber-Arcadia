@@ -5,8 +5,8 @@ import { CartContext } from "../contexts/CartContext";
 export const ItemDetail = ({ item }) => {
     const {onAdd} = useContext(CartContext);
 
-    const add = () =>{
-        onAdd(item);
+    const add = (quantity) =>{
+        onAdd(item, quantity);
     };
 
     return (
@@ -16,7 +16,8 @@ export const ItemDetail = ({ item }) => {
                 <img src={item.pictureUrl} alt="" />
                 <span>{item.description}</span>
                 <span>Precio: S/{item.price}</span>
-                <ItemCounter onAdd = {add}/>
+                <span>Stock: {item.stock}</span>
+                <ItemCounter cartAdd = {add} stock={item.stock} initial={1}/>
             </div>
         </div>
     );
