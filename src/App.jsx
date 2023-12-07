@@ -18,11 +18,11 @@ function App() {
         <Routes>
           <Route
             path='/'
-            element={<ItemListContainer greeting="Productos" />}
+            element={<ItemListContainer  />}
           />
           <Route
             path='/category/:id'
-            element={<ItemListContainer greeting="Productos" />}
+            element={<ItemListContainer  />}
           />
           <Route
             path='/items/:id'

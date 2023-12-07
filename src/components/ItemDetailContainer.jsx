@@ -21,8 +21,10 @@ export const ItemDetailContainer = () => {
     }, [id]);
 
     return (
+        <div className="main_container">
         <div className="item-list_container">
             {item ? <ItemDetail item={item} /> : <>Cargando</>}
+        </div>
         </div>
     )
 }

@@ -5,12 +5,23 @@ import { getFirestore, collection, getDocs, query, where } from "firebase/firest
 
 import { ItemList } from "./itemList";
 
-export const ItemListContainer = (props) => {
+export const ItemListContainer = () => {
 
     const [items, setItems] = useState([]);
+    const [title, setTitle] = useState();
     const { id } = useParams();
 
+
     useEffect(() => {
+
+        if (id ==="juegos"){
+            setTitle("Juegos")
+        } else if (id==="tarjetas"){
+            setTitle("Tarjetas")
+        } else {
+            setTitle("Productos")
+        }
+
         const db = getFirestore();
 
         const refCollection = !id
@@ -30,7 +41,7 @@ export const ItemListContainer = (props) => {
 
     return (
         <div className="main_container">
-            {props.greeting}
+            <h2>{title}</h2>
             <div className="item-list_container">
                 <ItemList items={items} />
             </div>

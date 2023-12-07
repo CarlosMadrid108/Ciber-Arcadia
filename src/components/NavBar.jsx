@@ -1,11 +1,21 @@
 import { NavLink } from "react-router-dom"
+import { useContext } from "react"
+
 import { CartWidget } from "./CartWidget"
+import { CartContext } from '../contexts/CartContext'
 
 export const NavBar = () => {
+
+    const { stockCheck, setStockCheck } = useContext(CartContext)
+
+    const changeStockCheck = () => {
+        setStockCheck(true);
+    }
+
     return (
         <header>
             <div>
-                <h1><NavLink to="/">Ciber Arcadia</NavLink></h1>
+                <h1 onClick={changeStockCheck}><NavLink to="/">Ciber Arcadia</NavLink></h1>
             </div>
             <nav>
                 <ul>
